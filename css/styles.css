@@ -1,0 +1,18 @@
+.jumbotron {
+  text-align: center;
+}
+#show-destination {
+  display: none;
+}
+.destination {
+  cursor: pointer;
+  color: blue;
+}
+.destination:hover {
+  text-decoration: underline;
+}
+.destination-name,.location-name,
+.landmark-name,.date-name,.note-name,
+.history-name{
+  display: none;
+}

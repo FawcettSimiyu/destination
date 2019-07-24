@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h3>Destinations Visited</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="new-destination">
+            <div class="form-group">
+              <label for="new-destination-name">Destination Name</label>
+              <input type="text" class="form-control" id="new-destination-name" placeholder="Enter destination">
+            </div>
+            <div class="form-group">
+              <label for="new-location-name">Location Name</label>
+              <input type="text" class="form-control" id="new-location-name" placeholder="Enter location">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark-name">Landmark Name</label>
+              <input type="text" class="form-control" id="new-landmark-name" placeholder="Enter Landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-date">Date</label>
+              <input type="date" class="form-control" id="new-date">
+            </div>
+            <div class="form-group">
+              <label for="new-note">Enter Note</label>
+              <textarea class="form-control" rows="4" cols="50" id="new-note"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="new-history">Enter history</label>
+              <textarea class="form-control" rows="4" cols="80" id="new-history"></textarea>
+            </div>
+            <button type="submit" class="btn bg-success">Add Destination</button>
+          </form>
+          <h2>Destinations</h2>
+          <ul id="destinations">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-destination">
+            <h2></h2>
+
+            <p>Destination Name: <span class="destination-name"></span></p>
+            <p>Location Name: <span class="location-name"></span></p>
+            <p>Landmark Name: <span class="landmark-name"></span></p>
+            <p>Date: <span class="date-name"></span></p>
+            <p>Notes: <span class="note-name"></span></p>
+            <p>History: <span class="history-name"></span></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
